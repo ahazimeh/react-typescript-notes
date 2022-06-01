@@ -1,0 +1,39 @@
+----------------------
+interface ChildProps {
+    color: string;
+    onClick: () => void;
+}
+
+export const Child = (props: ChildProps) => {
+    return <div>Hi there!</div>;
+}
+export const Child = ({color, onClick}: ChildProps) => {
+    return <div>Hi there!</div>;
+}
+
+video 8 minute 2(what is this image about?)
+
+export const ChildAsFC: React.FC<ChildProps> = ({ color, onClick }) => {
+  return <div>{color}</div>;
+};
+----------------------
+state
+const [guests, setGuests] = useState<string[]>([]);
+----------------------
+const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    console.log(event);
+  };
+  <div draggable onDragStart={onDragStart}>
+        Drag Me!
+      </div>
+
+  min: 2:50 composition event (autocomplete on mobile devices)
+
+----------------------
+class based component
+----------------------
+// refs
+const inputRef = useRef<HTMLInputElement>(null);
+
+
+npm i --save-exact @types/react-redux@7.1.15 axios@0.21.1 react-redux@7.2.2 redux@4.0.5 redux-thunk@2.3.0
