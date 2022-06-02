@@ -37,3 +37,19 @@ const inputRef = useRef<HTMLInputElement>(null);
 
 
 npm i --save-exact @types/react-redux@7.1.15 axios@0.21.1 react-redux@7.2.2 redux@4.0.5 redux-thunk@2.3.0
+
+common module system:
+AMD commond js es modules
+
+npm i --save-exact webpack@5.11.1 webpack-cli@4.3.0
+"scripts": {
+    "build": "webpack --mode=development"
+  },
+  npm run build
+
+webpack usually throws an error if it finds an import that isn't installed locally
+NpmInstallWebpackPlugin can change this behaviour
+rather than throwing an error it will install this module from npm into your machine or api server
+
+webpack can't run properly in the browser
+to solve this we will throw away babel and webpack and use esbuild that replaces babel and webpack
