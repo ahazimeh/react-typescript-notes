@@ -53,3 +53,31 @@ rather than throwing an error it will install this module from npm into your mac
 
 webpack can't run properly in the browser
 to solve this we will throw away babel and webpack and use esbuild that replaces babel and webpack
+
+npm i --save-exact esbuild-wasm@0.8.27
+
+npm view react dist.tarball
+this is going to print out a link that we can navigate to to download an archive that contains all the source code for react
+
+unpkg website
+
+indexedDb
+npm i localforage
+
+import react from "react-select"?
+
+
+iframe:
+window.b=2
+inside the iframe parent.b
+
+to access the iframe window from the parent
+document.querySelector('iframe').contentWindow.b
+
+<iframe src="/test.html" sandbox="allow-same-origin" /> or remove sandbox property to inable communication between the parent and iframe
+and also to have communication between parent and child you should have same domain, same port, and same protocol(http, https)
+
+
+for communication between iframe and parent
+parent: window.addEventListener('message1',(event => console.log(event), false)
+child: parent.postMessage('asdsad','*');
