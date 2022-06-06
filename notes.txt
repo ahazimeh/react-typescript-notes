@@ -81,3 +81,5 @@ and also to have communication between parent and child you should have same dom
 for communication between iframe and parent
 parent: window.addEventListener('message1',(event => console.log(event), false)
 child: parent.postMessage('asdsad','*');
+
+iframe.current.srcdoc = html //to set the content of the iframe
