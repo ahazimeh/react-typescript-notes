@@ -83,3 +83,12 @@ parent: window.addEventListener('message1',(event => console.log(event), false)
 child: parent.postMessage('asdsad','*');
 
 iframe.current.srcdoc = html //to set the content of the iframe
+
+
+open source browser-based editors:
+code mirror, ace editor, monaco editor(video 120)
+
+
+npm i --save-exact @monaco-editor/react@3.7.5
+this editor contains 3 versions, diff editor is used whenever you want to compare the difference between 2 files
+controlled editor is referring for controlled component in the world of react
