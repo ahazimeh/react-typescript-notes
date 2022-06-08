@@ -92,3 +92,5 @@ code mirror, ace editor, monaco editor(video 120)
 npm i --save-exact @monaco-editor/react@3.7.5
 this editor contains 3 versions, diff editor is used whenever you want to compare the difference between 2 files
 controlled editor is referring for controlled component in the world of react
+//install monaco package seperately to be ablt to make use of monaco types
+npm i prettier @types/prettier
