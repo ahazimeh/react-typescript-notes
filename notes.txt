@@ -94,3 +94,11 @@ this editor contains 3 versions, diff editor is used whenever you want to compar
 controlled editor is referring for controlled component in the world of react
 //install monaco package seperately to be ablt to make use of monaco types
 npm i prettier @types/prettier
+
+
+
+for syntax highlyting with monico editor://didn't work, video 132
+npm i --save-exact monaco-jsx-highlighter@0.0.15 jscodeshift@0.11.0 @types/jscodeshift@0.7.2
+
+import Highlighter from "monaco-jsx-highlighter"; //for the error to disappear we added a file called types.d.ts and added: declare module "monaco-jsx-highlighter";
+// @ts-ignore //for ts to not check the next line
