@@ -102,3 +102,8 @@ npm i --save-exact monaco-jsx-highlighter@0.0.15 jscodeshift@0.11.0 @types/jscod
 
 import Highlighter from "monaco-jsx-highlighter"; //for the error to disappear we added a file called types.d.ts and added: declare module "monaco-jsx-highlighter";
 // @ts-ignore //for ts to not check the next line
+
+
+//installed without versions
+npm i --save--exact react-resizable@1.11.0 @types/react-resizable@1.7.2
+resizable is a lower level of resizable box
