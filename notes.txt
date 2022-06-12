@@ -107,3 +107,21 @@ import Highlighter from "monaco-jsx-highlighter"; //for the error to disappear w
 //installed without versions
 npm i --save--exact react-resizable@1.11.0 @types/react-resizable@1.7.2
 resizable is a lower level of resizable box
+
+npm i @uiw/react-md-editor
+document.addEventListener("click", listener, { capture: true }); // it is required to add capture: true in react 17 so to be researched???
+
+use immer with redux so you don't have to always return the state
+
+return Math.random().toString(36).substring(2, 5);//36 means all nbs and letters
+
+
+let child: JSX.Element;
+  if (cell.type === "code") {
+    child = <CodeCell />;
+  } else {
+    child = <TextEditor />;
+  }
+
+to disable useEffect depency warning add the line right above the depency array:
+    // eslint-disable-next-line react-hooks/exhaustive-deps
