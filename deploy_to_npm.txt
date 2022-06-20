@@ -1,1 +1,20 @@
 npm init -y
+before deploying to npm follow these steps:
+1- make sure out package name is unique
+2- specify which files should be sent to npm when we publish ("files": ["dist"],) //I added this to package.json
+3- split our dependencies and devDependencies
+4- set our package to be publicly accessible
+    in package.json
+    "publishConfig": {
+        "access": "public"
+    },
+5- if building a cli, configure the file to run
+    "bin": "dist/index.js",
+    and in the index.ts and this line to the top
+    #!/usr/bin/env node
+    this will allow us to directly execute this file rather than first writing node index.js
+6- add a prepublish script
+    in the script section add this
+    "prepublishOnly": "npm run build"
+7- optional step: commit to git
+8- run np, publish
