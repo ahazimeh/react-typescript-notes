@@ -17,4 +17,6 @@ before deploying to npm follow these steps:
     in the script section add this
     "prepublishOnly": "npm run build"
 7- optional step: commit to git
-8- run np, publish
+8- run npm publish
+    npm login
+    npm publish
