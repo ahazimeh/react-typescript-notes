@@ -125,3 +125,38 @@ let child: JSX.Element;
 
 to disable useEffect depency warning add the line right above the depency array:
     // eslint-disable-next-line react-hooks/exhaustive-deps
+
+<progress className="progress is-small is-primary" max="100">
+              Loading
+            </progress>
+
+
+
+
+      jsxFactory: "_React.createElement",//????
+      jsxFragment: "_React.Fragment",//????
+
+
+npm i -g --save-exact lerna@3.22.1
+
+import { createProxyMiddleware } from "http-proxy-middleware"; // for node to have a proxy server
+
+
+
+//in both ways he was able to run the react project this way
+import { createProxyMiddleware } from "http-proxy-middleware";
+app.use(express.static('../../local-client/build'))
+//   app.use(
+//     createProxyMiddleware({
+//       target: "http://localhost:3000",
+//       ws: true,
+//       logLevel: "silent",
+//     })
+//   );
+app.use(express.static('../node_modules/local-client/build')) //this is symbolic link, it is not that compatible with express.static()
+
+const packagePath = require.resolve("local-client/build/index.html");
+app.use(express.static(path.dirname(packagePath)));
+
+
+js: reduce fn
